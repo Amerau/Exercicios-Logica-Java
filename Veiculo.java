@@ -7,7 +7,17 @@ public class Veiculo {
     private boolean motorLigado;
     private double combustivel;
 
-    
+    public Veiculo(String marca, String modelo, int ano, double velocidadeAtual, boolean motorLigado, double combustivel){
+
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+        this.velocidadeAtual = velocidadeAtual;
+        this.motorLigado = motorLigado;
+        this.combustivel = combustivel;
+        
+    }
+
     public String getMarca() {
         return marca;
     }
@@ -56,7 +66,6 @@ public class Veiculo {
         this.combustivel = combustivel;
     }
 
-    
     public void ligarMotor(){
 
         if(this.motorLigado){
