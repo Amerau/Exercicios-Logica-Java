@@ -134,7 +134,7 @@ public class Veiculo {
             System.out.println("Por favor desligue o motor para abastecer!");
         }
         if(this.velocidadeAtual > 0){
-            System.out.println("Por favor pare o carro para abastecer!");
+            System.out.println("Por favor pare o veiculo para abastecer!");
         }
         else{
             this.combustivel = combustivel + 10;
