@@ -3,6 +3,38 @@ public class Aviao extends Veiculo {
     private double altitude;
     private boolean tremDePousoBaixado;
 
+    public double getAltitude(){
+
+        return altitude;
+
+    }
+
+    public void setAltitude(double altitude){
+
+        this.altitude = altitude;
+
+    }
+
+    public boolean isTremDePousoBaixado(){
+
+        return tremDePousoBaixado;
+
+    }
+
+    public void setTremDePousoBaixado(boolean tremDePousoBaixado){
+
+        this.tremDePousoBaixado = tremDePousoBaixado;
+
+    }
+
+    public Aviao(String marca, String modelo, int ano, double combustivel, double altitude, boolean tremDePousoBaixado){
+
+        super(marca, modelo, ano, combustivel);
+        this.altitude = altitude;
+        this.tremDePousoBaixado = tremDePousoBaixado;
+
+    }
+    
     public void decolar(){
 
         if(this.altitude > 0){
